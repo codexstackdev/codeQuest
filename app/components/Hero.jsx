@@ -30,7 +30,7 @@ const Hero = () => {
         <TextType
           text={"CodeQuest Online Compiler & Coding Challenges"}
           typingSpeed={75}
-          pauseDuration={0}
+          pauseDuration={2000}
           showCursor={true}
           cursorCharacter="|"
         />
@@ -38,7 +38,7 @@ const Hero = () => {
           CodeQuest is an interactive online coding platform that combines a
           powerful compiler with engaging coding challenges. Practice, test, and
           improve your programming skills directly in your browser from quick
-          exercises to complex problem-solving tasks with instant feedback and
+          exercises to complex problem solving tasks with instant feedback and
           multi-language support.
         </p>
       </motion.div>

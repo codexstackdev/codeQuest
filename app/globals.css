@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-light: var(--font-poppins);
+  --font-black: var(--font-poppinsBlack)
 }
 
 @theme inline {
@@ -22,14 +24,18 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-poppins);
+  font-family: var(--font-light);
 }
 ::-webkit-scrollbar {
     display: none;
 }
 .box{
-  @apply relative w-[250px] backdrop-blur-[8px]  bg-[rgba(83,83,83,0.1)]  flex flex-col justify-center items-center rounded-md p-2 border h-[150px];
+  @apply px-1 relative w-[270px] h-[210px] backdrop-blur-[8px]  bg-[rgba(83,83,83,0.1)]  flex flex-col justify-center items-center rounded-md p-2 border;
 }
 .nocursor{
   @apply pointer-events-none
+}
+.blackPop{
+  font-family: var(--font-black);
+  font-weight: 900;
 }
