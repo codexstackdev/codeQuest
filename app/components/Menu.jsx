@@ -44,9 +44,10 @@ const Menu = () => {
             {!isClick ? <PanelRightOpen className='w-7 h-7'/> : <PanelLeftOpen className='w-7 h-7'/>}
     </div>
     <motion.div
+    id="sideBar"
     initial={{display: 'none'}}
     animate={{width: isClick ? 300 : 0, display: isClick ? 'flex' : 'none'}}
-    className='fixed flex-col max-w-[200px] items-center hidden justify-center top-0 right-0 z-2 h-full bg-black'>
+    className='fixed flex-col items-center hidden justify-center top-0 right-0 z-2 h-full bg-black'>
         <h1 id="sideBarText" className='whitespace-nowrap blackPop mb-10 text-transparent text-3xl bg-gradient-to-br from-blue-400 to-purple-400 bg-clip-text'>Pick a Language</h1>
         <motion.div className="flex flex-wrap gap-2 w-full items-center justify-center">
             {languages.map((program, index) =>{

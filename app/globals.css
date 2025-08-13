@@ -66,4 +66,7 @@ body {
     #sideBarText{
       @apply text-xl
     }
+    #sideBar{
+      @apply max-w-[200px]
+    }
 }
