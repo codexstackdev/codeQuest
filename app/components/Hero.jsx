@@ -19,6 +19,7 @@ const Hero = () => {
         returnDuration={1.5}
       />
       <motion.div
+        id='heroBox'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ ease: "easeIn", duration: 0.5 }}
@@ -34,7 +35,7 @@ const Hero = () => {
           showCursor={true}
           cursorCharacter="|"
         />
-        <p className="text-center text-xl text-[#A1A1AA] font-semibold">
+        <p id='heroPara' className="text-center text-xl text-[#A1A1AA] font-semibold">
           CodeQuest is an interactive online coding platform that combines a
           powerful compiler with engaging coding challenges. Practice, test, and
           improve your programming skills directly in your browser from quick

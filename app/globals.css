@@ -25,6 +25,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-light);
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -33,9 +34,33 @@ body {
   @apply px-1 relative w-[270px] h-[210px] backdrop-blur-[8px]  bg-[rgba(83,83,83,0.1)]  flex flex-col justify-center items-center rounded-md p-2 border;
 }
 .nocursor{
-  @apply pointer-events-none
-}
+  @apply pointer-events-none;
+};
 .blackPop{
   font-family: var(--font-black);
   font-weight: 900;
+}
+.ExpCard{
+  @apply w-[300px] h-[180px] flex items-center flex-col justify-center p-2 rounded-md relative bg-gradient-to-br from-gray-700 to-gray-800 backdrop-blur-[8px] will-change-transform [backface-visibility:hidden] [transform:translateZ(0)];
+}
+#footer{
+  font-family: var(--font-black)
+}
+
+@media screen and (max-width: 500px) {
+    .responsive{
+      @apply text-xl;
+    }
+    #heroPara{
+      @apply text-sm;
+    }
+    #heroBox{
+      @apply w-full;
+    }
+    #infoMainBox{
+      @apply h-[1500px] max-h-[1500px] overflow-hidden;
+    }
+    #infoBox{
+      @apply flex flex-col justify-center;
+    }
 }
