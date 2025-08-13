@@ -63,4 +63,7 @@ body {
     #infoBox{
       @apply flex flex-col justify-center;
     }
+    #sideBarText{
+      @apply text-xl
+    }
 }
